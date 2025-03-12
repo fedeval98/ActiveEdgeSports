@@ -1,0 +1,182 @@
+:root{
+  --mobile: 480px;
+  --tablet: 768px;
+  --laptop: 1024px;
+  --desktop: 1280px;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100px;
+}
+
+.title {
+  display: inline-block;
+  width: 60%;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 14px;
+}
+
+.navbar {
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Banner */
+main picture img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Sección de productos */
+section {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+article {
+  display: inline-block;
+  width: 30%;
+  background: white;
+  padding: 15px;
+  margin: 10px;
+}
+
+article picture img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+article h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+article p {
+  font-size: 14px;
+  color: #666;
+}
+
+article strong {
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+}
+
+article button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+article button:hover {
+  background-color: #555;
+}
+
+
+/* Estilos del contenido principal */
+.main {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la sección "Meet our Team" */
+.team-section {
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  width: 30%;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.team-member .member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+
+
+.team-member .member-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 200px;
+}
+
+.team-member .member-name {
+  margin-top: 10px;
+}
+
+/* Estilos de la sección "Our Values" */
+.values-section p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
