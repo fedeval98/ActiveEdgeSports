@@ -5,7 +5,7 @@
   --desktop: 1280px;
 }
 
-/* Reset básico */
+/* BASIC RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* Estilos generales */
+/* GENERAL STYLES */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -25,158 +25,352 @@ body {
 header {
   background-color: #333;
   color: white;
-  padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  flex-wrap:wrap ;
 }
 
-.logo-container img {
-  max-width: 100px;
-}
-
-.title {
-  display: inline-block;
-  width: 60%;
-  font-size: 24px;
-  margin: 5px 0;
-}
-
-.subtitle {
-  display: block;
-  font-size: 14px;
-}
-
-.navbar {
-  margin-top: 10px;
-}
-
-.navbar a {
+header a{
   color: white;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
 }
 
+.logo-container img {
+  max-width: 100px;
+}
+
+.title-container{
+  flex: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+
+}
+
+.active{
+  color: black;
+  background-color: cyan ;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 /* Banner */
-main picture img {
+.index > picture img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-/* Sección de productos */
-section {
-  max-width: 1200px;
-  margin: 40px auto;
+/* PRODUCTS SECTION - INDEX */
+.index section {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
   text-align: center;
 }
 
-h2 {
+.index h2 {
+  width: 100%;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
-article {
-  display: inline-block;
-  width: 30%;
+.index article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 250px;
   background: white;
-  padding: 15px;
   margin: 10px;
+  align-items: center;
 }
 
-article picture img {
+.index article picture img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
 
-article h3 {
+.index article h3 {
   font-size: 18px;
   margin: 10px 0;
 }
 
-article p {
+.index article p {
   font-size: 14px;
   color: #666;
 }
 
-article strong {
+.index article strong {
   font-size: 18px;
   display: block;
   margin: 10px 0;
 }
 
-article button {
+.index article button {
   background-color: #333;
   color: white;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  max-width: 100px;
 }
 
-article button:hover {
+.index article button:hover {
   background-color: #555;
 }
 
 
-/* Estilos del contenido principal */
+/* INDEX MAIN STYLES */
 .main {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main p{
+  text-align: center;
+  width: 100%;
 }
 
+/* Secciones generales */
 .section {
-  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .section-title {
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
 }
 
-/* Estilos de la sección "Meet our Team" */
-.team-section {
+/* Meet our Team */
+
+.section article {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cada miembro del equipo */
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Ocupan 3 columnas */
+  min-width: 250px; /* Evita que se colapsen en pantallas pequeñas */
   text-align: center;
 }
 
-.team-member {
-  display: inline-block;
-  width: 30%;
-  margin: 10px;
-  vertical-align: top;
-}
-
-.team-member .member-photo {
+/* Estilos de la foto */
+.member-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 10px;
 }
 
-
-
-.team-member .member-photo img {
+.member-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: 200px;
 }
 
-.team-member .member-name {
-  margin-top: 10px;
-}
-
-/* Estilos de la sección "Our Values" */
+/* Our Values */
 .values-section p {
-  margin-bottom: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
+/* PRODUCTS STYLE */
+.products ul{
+  list-style: none;
+}
+
+.products {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.products-categories{
+  text-align: center;
+  width: 15%;
+}
+.category{
+  text-align: left;
+  padding-left: 10px;
+  background-color: #a9a5a5;
+}
+
+.subcat{
+  background-color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.category-title{
+  margin: 20px;
+}
+
+.products-articles{
+  display: flex;
+  width: 82%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products-articles h2{
+  width: 100%;
+  margin: 20px;
+}
+
+.products-articles article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1 1 calc(82%/3 - 10px);
+  min-width: 250px;
+  background: rgb(222, 220, 220);
+  margin: 10px;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+
+.products-articles article picture img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.products-articles article h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.products-articles article p {
+  font-size: 14px;
+  color: #181616;
+  margin: 0 10px;
+}
+
+.products-articles article strong {
+  font-size: 18px;
+  display: block;
+  margin: 10px 0;
+}
+
+.products-articles article button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  max-width: 100px;
+}
+
+.products-articles article button:hover {
+  background-color: #555;
+}
+
+.products-table{
+  width: 100%;
+}
+
+.products-table {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.products-table h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* TABLE STYLES */
+.products-table table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.products-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.products-table th, 
+.products-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.products-table th {
+  text-transform: uppercase;
+}
+
+.products-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.products-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.products-table td {
+  text-align: left;
+}
+
 
 /* Footer */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 10px;
+}
+
+/* CONTACT WIP */
+
+.contact{
+  font-size: 80px;
+  text-align: center;
+}
+.contact img{
+  width: 230px;
 }
