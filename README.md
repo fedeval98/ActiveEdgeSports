@@ -6,16 +6,16 @@ Este proyecto consiste en una tienda deportiva ficticia llamada **Active Edge Sp
 
 ## 📁 Estructura del Proyecto
 
-📁 / (raíz)  
-├── index.html # Página principal (Home)  
-├── README.md # Documentación del proyecto   
+📁 / (raiz)  
+├── index.html # Pagina principal (Home)  
+├── README.md # Documentacion del proyecto   
 ├── /assets │  
   ├── style.css # Hoja de estilos global  
-  ├── /img # Imágenes del sitio (logo, productos, categorías, equipo)  
+  ├── /img # Imagenes del sitio (logo, productos, categorias, equipo)  
   └── /pages │  
-    ├── aboutus.html # Página About Us  
-    ├── contact.html # Página Contacto con formulario y modal  
-    └── products.html # Página de productos y beneficios 
+    ├── aboutus.html # Pagina About Us  
+    ├── contact.html # Pagina Contacto con formulario y modal  
+    └── products.html # Pagina de productos y beneficios 
 
 ---
 
