@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./contact.css">
+  <title>Active Edge Sports</title>
+</head>
+
+<body>
+  <header>
+    <picture class="logo-container">
+      <img class="logo" src="../img/logo.webp" alt="Active Edge Sports logo">
+    </picture>
+    <div class="title-container">
+      <h1 class="title">ACTIVE EDGE SPORTS</h1>
+      <small class="subtitle">All you need in one store</small>
+    </div>
+    <nav class="navbar">
+      <a href="../../index.html">Home</a>
+      <a href="./products.html">Products</a>
+      <a href="./aboutus.html">About Us</a>
+      <a class="active" href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section>
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <!-- MAP -->
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2322.06925123891!2d-58.43562435227513!3d-34.606643896206485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1745586047343!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- FORM -->
+        <form action="#thanks">
+          <!-- NAME SECTION -->
+          <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+          </fieldset>
+          <!-- EMAIL SECTION -->
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </fieldset>
+          <!-- CATEGORY SECTION -->
+          <fieldset>
+            <legend>Interested categories:</legend>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="category" value="1"> Category 1</label>
+              <label><input type="checkbox" name="category" value="2"> Category 2</label>
+              <label><input type="checkbox" name="category" value="3"> Category 3</label>
+              <label><input type="checkbox" name="category" value="4"> Category 4</label>
+              <label><input type="checkbox" name="category" value="5"> Category 5</label>
+              <label><input type="checkbox" name="category" value="6"> Category 6</label>
+            </div>
+          </fieldset>
+          <!-- TEXTAREA SECTION -->
+          <fieldset>
+            <textarea name="message" placeholder="Message"></textarea>
+          </fieldset>
+          <!-- SUBSCRIBE SECTION -->
+          <fieldset>
+            <legend>I want to subscribe:</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="subscribe" value="yes"> Yes</label>
+              <label><input type="radio" name="subscribe" value="no"> No</label>
+            </div>
+          </fieldset>
+          <!-- BUTTONS -->
+          <div class="form-actions">
+            <button type="reset">Reset</button>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+    <!-- Modal HTML -->
+    <div id="thanks" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h3>¡Gracias por contactarnos!</h3>
+        <p>Tu mensaje ha sido enviado correctamente. Nos comunicaremos pronto.</p>
+      </div>
+    </div>
+  
+    <footer>
+      <p>&copy; 2024 ACTIVE EDGE SPORTS. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
